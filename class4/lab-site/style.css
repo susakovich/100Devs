@@ -142,8 +142,8 @@ header {
 }
 
 h1 {
-  margin-top: 40px;
-  font-size: 32px;
+  margin-top: 60px;
+  font-size: 40px;
   font-style: italic;
   font-weight: 700;
 }
@@ -152,15 +152,23 @@ nav {
   margin-top: 40px;
 }
 
-li {
+header li {
   display: inline;
+  border-right: 3px solid gray;
+  padding-right: 10px;
 }
 
-a {
+header a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+header li:last-child {
+  border: none;
+}
+header li:last-child a {
+  color: green;
 }
 
 section {
@@ -177,21 +185,34 @@ p {
   padding-bottom: 40px;
   font-size: 16px;
   color: rgb(245, 245, 245);
+  line-height: 150%;
 }
 
 img {
-  width: 220px;
-  height: 320px;
+  width: 240px;
+  height: 340px;
   float: right;
 }
 
 footer {
   text-align: center;
-  margin-top: -30px;
-  margin-bottom: 40px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+footer li {
+  display: inline;
+  border-right: 3px solid gray;
+  padding-left: 10px;
+}
+
+footer li:last-child {
+  border: none;
 }
 
 footer a {
   color: rgb(34, 183, 34);
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: underline;
 }
