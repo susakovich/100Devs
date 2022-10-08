@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  border: 1px solid gray;
+  background-color: aqua;
+}
+
+.hero {
+  height: 200px;
+  border: 3px solid rgb(142, 142, 214);
+  background-color: rgb(126, 189, 189);
+}
+
+.section40 {
+  width: 40%;
+  height: 300px;
+  border: 3px solid burlywood;
+  background-color: cornflowerblue;
+  float: left;
+}
+
+.section60 {
+  width: 60%;
+  height: 300px;
+  border: 3px solid burlywood;
+  background-color: cornflowerblue;
+
+  float: left;
+}
+
+footer {
+  height: 100px;
+  border: 1px solid gray;
+  background-color: aqua;
+  clear: both;
+}
