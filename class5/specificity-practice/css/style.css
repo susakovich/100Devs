@@ -18,10 +18,3 @@ html
   color: brown !important;
 }
 /* Please select Rhino with the highest level of specificity possible */
-
-.top,
-#rhino,
-.africa,
-.fourLegs {
-  color: blueviolet;
-}
