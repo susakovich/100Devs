@@ -1,0 +1,13 @@
+.box-set {
+  background-color: #e9e9d2;
+  overflow: auto;
+}
+
+.box {
+  background: #2db34a;
+  float: left;
+  padding: 40px 0;
+  margin: 1.858736059%;
+  width: 29.615861214%;
+  text-align: center;
+}

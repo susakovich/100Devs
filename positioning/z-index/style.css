@@ -1,0 +1,36 @@
+.box-set {
+  background-color: darkgrey;
+  position: relative;
+  height: 160px;
+}
+
+.box {
+  background-color: lawngreen;
+  border: 2px solid black;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+}
+
+.box-1 {
+  top: 10px;
+  left: 10px;
+}
+
+.box-2 {
+  bottom: 10px;
+  left: 70px;
+  z-index: 3;
+}
+
+.box-3 {
+  left: 130px;
+  top: 10px;
+  z-index: 2;
+}
+
+.box-4 {
+  bottom: 10px;
+  left: 190px;
+  z-index: 1;
+}
