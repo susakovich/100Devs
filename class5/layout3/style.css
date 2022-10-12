@@ -22,3 +22,17 @@ section {
   width: 40%;
   background: rgb(230, 212, 186);
 }
+
+@media screen and (max-width: 600px) {
+  section {
+    background-color: green;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  section,
+  .section-two {
+    background: blue;
+    margin: 20px 0;
+    width: 100%;
+  }
+}
