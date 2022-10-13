@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 150px;
+  background-color: bisque;
+  border: 2px solid black;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.hero_section {
+  background: gold;
+  border: 5px solid purple;
+  height: 600px;
+  width: 40%;
+}
+
+section {
+  border: 2px solid black;
+  height: 600px;
+  width: 15%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  section,
+  .hero_section {
+    background-color: aqua;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  section {
+    background-color: cadetblue;
+    width: 25%;
+    height: 150px;
+  }
+  .hero_section {
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1600px) {
+  .hero_section {
+    height: 800px;
+    width: 100%;
+    background-image: url(https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2020-07/kitten-510651.jpg?h=f54c7448&itok=ZhplzyJ9);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section {
+    width: 25%;
+    height: 500px;
+    background: crimson;
+  }
+  section:nth-child(3) {
+    background: gray;
+  }
+  section:nth-child(4) {
+    background: darkblue;
+  }
+  section:nth-child(5) {
+    background: blueviolet;
+  }
+  section:nth-child(6) {
+    background: brown;
+  }
+}
