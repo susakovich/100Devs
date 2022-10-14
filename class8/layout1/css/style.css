@@ -5,36 +5,108 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 body {
-
+  font-family: "Source Sans Pro", sans-serif;
 }
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* NAV */
+.logo {
+  margin: 50px 0px 20px 40px;
+  display: block;
+  width: 60px;
+  height: 30px;
 }
+.techPlus {
+  display: block;
+  margin: 20px 0px 10px 40px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #dca946;
+}
+.techPlus:hover {
+  color: #9f6c05;
+}
+.login {
+  margin: 40px;
+  text-decoration: none;
+  color: rgb(69, 66, 66);
+  font-size: 20px;
+}
+.login:hover {
+  color: rgb(94, 185, 94);
+}
+nav {
+  float: left;
+  width: 14%;
+  font-weight: lighter;
+}
+nav li {
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+nav li > a {
+  text-decoration: none;
+  color: rgb(69, 66, 66);
+}
+nav li > a:hover {
+  color: rgb(94, 185, 94);
+}
+nav ul {
+  margin-top: 40px;
+  list-style: none;
+}
+/* MAIN Section */
 
-footer {
-
+main {
+  width: 52%;
+  float: left;
+}
+h1 {
+  font-size: 52px;
+}
+span {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+.blizz {
+  width: 850px;
+  height: 430px;
+  display: block;
+  margin-top: 20px;
+}
+aside {
+  width: 32%;
+  float: left;
+  margin: 1%;
+}
+aside section {
+  border-bottom: 1px solid rgb(195, 195, 195);
+}
+aside section:last-child {
+  border: none;
+}
+h2 {
+  font-size: 33px;
 }
 
 /******************************************
