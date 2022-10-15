@@ -82,6 +82,7 @@ main {
 }
 h1 {
   font-size: 52px;
+  width: 900px;
 }
 span {
   color: black;
@@ -112,3 +113,58 @@ h2 {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 80px;
+    width: 1550px;
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  nav {
+    width: 10%;
+  }
+  main {
+    width: 60%;
+    margin-left: 5%;
+  }
+  .blizz {
+    width: 1200px;
+    height: 600px;
+  }
+  aside {
+    width: 20%;
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  nav {
+    width: 10%;
+    float: none;
+    margin: 0 3%;
+  }
+  nav ul li {
+    display: inline;
+  }
+  main {
+    width: 60%;
+    margin-left: 5%;
+  }
+  .blizz {
+    width: 700px;
+    height: 400px;
+  }
+  aside {
+    float: none;
+    margin: 0 5%;
+  }
+}
