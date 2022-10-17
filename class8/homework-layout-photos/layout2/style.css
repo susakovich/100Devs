@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  background: rgb(30, 36, 49);
+  height: 800px;
+  padding: 50px;
+}
+nav {
+  padding-bottom: 100px;
+}
+main img {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 800px;
+}
+.home {
+  color: white;
+}
+main a {
+  color: rgb(98, 95, 95);
+}
+nav ul * {
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+.btn {
+  background-color: rgb(98, 95, 95);
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 40px;
+}
+/* SECTION */
+section {
+  width: 50%;
+  float: left;
+}
+h1 {
+  color: rgb(223, 212, 212);
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+p {
+  color: rgb(223, 212, 212);
+  margin-bottom: 50px;
+}
+.img_section {
+  width: 600px;
+  height: 400px;
+  margin-left: 150px;
+  border-radius: 20px;
+  float: left;
+  background-color: white;
+}
+.gray_section {
+  width: 500px;
+  height: 300px;
+  background-color: gray;
+  margin: 50px 50px;
+}
+.order-btn {
+  padding: 20px 40px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 100px;
+  color: black;
+}
+.create-btn {
+  color: white;
+  text-decoration: none;
+}
+.btn-sign {
+  padding-right: 20px;
+}
+.img_here {
+  width: 200px;
+  height: 200px;
+  margin: 50px 130px;
+  background-color: rgb(30, 36, 49);
+}
+.img_here p {
+  text-align: center;
+  padding-top: 90px;
+}
+/* FIRM */
+.firm {
+  width: 50%;
+  float: left;
+  padding: 50px;
+}
+.firm span {
+  color: gray;
+}
+.firm p {
+  color: black;
+  width: 50%;
+}
+.firm h2 {
+  font-size: 40px;
+  padding: 30px 0;
+}
+.firm + section {
+  padding: 100px;
+}
+.img-here {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
