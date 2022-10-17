@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* MAIN */
+/* Nav */
+main {
+  background: rgb(105, 118, 136);
+  color: white;
+  height: 700px;
+}
+main nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+main nav {
+  text-align: center;
+  padding: 50px;
+}
+img {
+  padding: 0 600px;
+}
+.btn {
+  border: 1px solid;
+  border-radius: 10px;
+  color: rgb(105, 118, 136);
+  background-color: white;
+  padding: 10px 10px;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+  padding: 80px 0;
+}
+main p {
+  font-size: 30px;
+  text-align: center;
+  padding: 0 150px;
+}
+main p + a {
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 50px;
+  text-decoration: none;
+  font-size: 30px;
+}
+main span {
+  text-align: center;
+  display: block;
+  padding-top: 100px;
+  color: rgb(32, 29, 29);
+  font-size: 20px;
+}
+/*  ******************************* */
+/* SECOND SECTION */
+section {
+  height: 500px;
+}
+section h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 150px;
+}
+section > p {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 400px 0 400px;
+}
+/*  ******************************* */
+/* GYM SECTION */
+.gym {
+  background: rgb(220, 223, 226);
+  height: 700px;
+  text-align: center;
+}
+.gym section {
+  width: 50%;
+  float: left;
+}
+h3 {
+  font-size: 30px;
+  padding: 40px 0;
+}
+.gym section > p {
+  font-size: 24px;
+  display: inline;
+}
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(105, 118, 136);
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.gym a {
+  display: block;
+  padding: 20px 30px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  width: 20%;
+  margin: 20px auto;
+}
+/*  ******************************* */
+footer {
+  background-color: rgb(24, 31, 31);
+  height: 300px;
+  margin-top: 100px;
+  padding: 60px;
+}
+footer span {
+  color: gray;
+}
+.footer__first,
+.footer__second {
+  list-style: none;
+  height: 50px;
+}
+.footer__first a,
+.footer__second a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+.section_first {
+  width: 50%;
+  float: left;
+}
+.section_second {
+  width: 50%;
+  float: right;
+  color: white;
+}
+.section_second p {
+  font-size: 22px;
+  display: inline;
+}
