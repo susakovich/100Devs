@@ -100,7 +100,7 @@ main section p {
 /* SOCIAL Section */
 section > .social-content,
 .social-boxes {
-  height: 800px;
+  height: 1000px;
 }
 .social-content {
   padding: 2% 3%;
@@ -156,4 +156,49 @@ h2 {
   font-weight: 300;
   font-size: 18px;
   line-height: 180%;
+}
+/* ********************** */
+/* Fourth Section */
+.fourth-section {
+  background-color: #f8f9fb;
+  text-align: center;
+}
+.fourth-section h3 {
+  font-size: 42px;
+  color: rgb(23, 25, 37);
+  padding: 100px 0 30px 0;
+  font-weight: 300;
+}
+.fourth-section p {
+  width: 60%;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 180%;
+  margin-bottom: 100px;
+}
+#checkbox {
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+}
+#checkbox + p {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(93, 102, 121);
+}
+.right,
+.left {
+  margin-top: 100px;
+  width: 50px;
+}
+.left {
+  margin-right: 20px;
 }
