@@ -1,0 +1,40 @@
+body {
+  background-color: bisque;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 160px;
+  height: 160px;
+  background-color: skyblue;
+  border: 2px solid black;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  flex-grow: 1;
+}
+.box2 {
+  flex-grow: 5;
+}
+.box3 {
+  flex-grow: 1;
+}
+
+.box1 {
+  flex: 2 3 30em;
+}
