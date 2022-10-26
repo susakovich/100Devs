@@ -1,0 +1,242 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+main {
+  background-image: url(./assets/fruits.jpg);
+  height: 100vh;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;
+  gap: 40px;
+  padding: 2% 10%;
+  /* margin-right: 200px; */
+}
+nav li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+nav a:hover {
+  color: #fff;
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+.hero {
+  padding: 2% 5%;
+}
+h1 {
+  font-size: 90px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+input {
+  width: 500px;
+  height: 50px;
+  border: none;
+  padding-left: 10px;
+}
+.location-btn {
+  padding: 14px 40px;
+  margin-left: -3px;
+  background-color: orange;
+  color: white;
+}
+.socials > li,
+a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+.socials {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin-top: 40px;
+}
+/*******************************************/
+/* About Us section */
+#about_us {
+  background-image: url(./assets/banana.jpg);
+  padding-top: 5%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 400px;
+  height: 100vh;
+}
+.container {
+  width: 50%;
+}
+h2 {
+  font-size: 72px;
+  margin: 0;
+}
+h3 {
+  font-size: 24px;
+  color: orange;
+  margin-bottom: 0;
+}
+#about_us p {
+  font-size: 20px;
+  line-height: 150%;
+}
+.about_btn {
+  padding: 20px 40px;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  margin-top: 40px;
+}
+.about_btn:hover {
+  background-color: white;
+  color: orange;
+}
+.container p + p {
+  padding-top: 40px;
+}
+/* ***************************** */
+/* Menu Section */
+#menu {
+  height: 800px;
+  padding-top: 100px;
+  background-color: #e3e7e9;
+  text-align: center;
+}
+.menu_order {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+}
+.menu_order a {
+  font-size: 20px;
+}
+.menu_order a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+.meals {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 80px;
+}
+.meals img {
+  width: 250px;
+  height: 300px;
+}
+.border {
+  width: 600px;
+  height: 2px;
+  background-color: gray;
+  display: flex;
+  margin: 20px auto;
+}
+/* ******************************** */
+/* Order Section */
+#order {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebeff1;
+}
+#order h2 {
+  margin-bottom: 60px;
+}
+#order img {
+  margin-bottom: 20px;
+}
+#order span {
+  font-size: 40px;
+  color: orange;
+  font-weight: 700;
+}
+.working_time {
+  display: flex;
+  gap: 400px;
+  margin-top: 40px;
+}
+.working_time p {
+  font-size: 24px;
+}
+.working_time p + p {
+  font-size: 32px;
+  font-weight: 700;
+}
+.kaki {
+  margin-top: 60px;
+  width: 75%;
+  padding-bottom: 60px;
+}
+/* *************************** */
+/* Testimonials Section */
+#testimonials {
+  background-color: #ebeff1;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonials h2 {
+  margin-bottom: 60px;
+}
+#testimonials img {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+#testimonials span {
+  color: gray;
+  margin-bottom: 10px;
+}
+#testimonials p {
+  display: inline-block;
+  padding: 0 30%;
+  font-size: 22px;
+  line-height: 150%;
+}
+.stars {
+  margin-bottom: 40px;
+}
