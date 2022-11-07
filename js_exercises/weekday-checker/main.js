@@ -1,13 +1,14 @@
-document.querySelector("#check").addEventListener("click", check);
+document.getElementById("check").onclick = check;
+// document.querySelector("#check").addEventListener("click",check);
 
 function check() {
-  let day = document.getElementById("day").value;
+  const day = document.querySelector("#day").value;
 
   if (day === "Tuesday" || day === "Thursday") {
-    document.querySelector("#placeToSee").innerText = "CLASSSS DAAAAY";
+    document.getElementById("placeToSee").innerText = "CLASSS DAAAAY";
   } else if (day === "Saturday" || day === "Sunday") {
-    document.querySelector("#placeToSee").innerText = "WEEKEND";
+    document.getElementById("placeToSee").innerText = "WEEKENDDD";
   } else {
-    document.querySelector("#placeToSee").innerText = "BORRING";
+    document.getElementById("placeToSee").innerText = "BORRRRINGGGGG";
   }
 }
