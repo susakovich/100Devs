@@ -1,26 +1,32 @@
 let total = 0;
 
-document.querySelector("#pumpkin").addEventListener("click", makeZero);
-document.querySelector("#dominosPizza").addEventListener("click", jumanji);
-document.querySelector("#zebra").addEventListener("click", add9);
-document.querySelector("#cantThinkOfAnything").addEventListener("click", sub2);
+document.getElementById("zero").onclick = addZero;
+document.getElementById("plusThree").onclick = addThree;
+document.getElementById("plusNine").onclick = addNine;
+document.getElementById("minusTwo").onclick = subTwo;
+document.getElementById("divideTwo").onclick = divTwo;
 
-function makeZero() {
+function addZero() {
   total = 0;
-  document.querySelector("#placeToPutResult").innerText = total;
+  document.querySelector("#result").innerText = total;
 }
 
-function jumanji() {
-  total = total + 3;
-  document.querySelector("#placeToPutResult").innerText = total;
+function addThree() {
+  total += 3;
+  document.querySelector("#result").innerText = total;
 }
 
-function add9() {
-  total = total + 9;
-  document.querySelector("#placeToPutResult").innerHTML = total;
+function addNine() {
+  total += 9;
+  document.querySelector("#result").innerText = total;
 }
 
-function sub2() {
-  total = total - 2;
-  document.querySelector("#placeToPutResult").innerHTML = total;
+function subTwo() {
+  total -= 2;
+  document.querySelector("#result").innerText = total;
+}
+
+function divTwo() {
+  total /= 2;
+  document.querySelector("#result").innerText = total;
 }
