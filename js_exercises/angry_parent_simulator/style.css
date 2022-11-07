@@ -1,0 +1,29 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+h1,
+h2,
+form {
+  text-align: center;
+}
+button {
+  display: block;
+  margin: 20px auto;
+}
+h2 {
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
