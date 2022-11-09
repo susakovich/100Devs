@@ -1,3 +1,7 @@
-.hidden{
-	display: none;
+.hidden {
+  display: none;
+}
+h2 {
+  cursor: pointer;
+  display: inline-block;
 }
