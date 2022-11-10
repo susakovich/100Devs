@@ -1,37 +1,42 @@
 let total = 0;
 
-document.getElementById("zero").onclick = addZero;
-document.getElementById("plusThree").onclick = addThree;
-document.getElementById("plusNine").onclick = addNine;
-document.getElementById("minusTwo").onclick = subTwo;
-document.getElementById("divideTwo").onclick = divTwo;
+document.getElementById("zero").addEventListener("click", zer0);
+document.getElementById("plusThree").addEventListener("click", add3);
+document.getElementById("plusNine").addEventListener("click", mul9);
+document.getElementById("minusTwo").addEventListener("click", sub2);
+document.getElementById("divideTwo").addEventListener("click", div2);
 
-function addZero() {
+function zer0() {
   total = 0;
-  document.querySelector("#result").innerText = total;
-  document.querySelector("body").style.backgroundColor = "white";
+  document.getElementById("result").innerText = total;
+  document.querySelector("body").style.backgroundColor = "red";
+  document.querySelector("body").style.color = "white";
 }
 
-function addThree() {
+function add3() {
   total += 3;
-  document.querySelector("#result").innerText = total;
-  document.querySelector("body").style.backgroundColor = "violet";
+  document.getElementById("result").innerText = total;
+  document.querySelector("body").style.backgroundColor = "purple";
+  document.querySelector("body").style.color = "white";
 }
 
-function addNine() {
-  total += 9;
-  document.querySelector("#result").innerText = total;
-  document.querySelector("body").style.backgroundColor = "orange";
+function mul9() {
+  total *= 9;
+  document.getElementById("result").innerText = total;
+  document.querySelector("body").style.backgroundColor = "skyblue";
+  document.querySelector("body").style.color = "black";
 }
 
-function subTwo() {
+function sub2() {
   total -= 2;
-  document.querySelector("#result").innerText = total;
-  document.querySelector("body").style.backgroundColor = "darkgrey";
+  document.getElementById("result").innerText = total;
+  document.querySelector("body").style.backgroundColor = "brown";
+  document.querySelector("body").style.color = "white";
 }
 
-function divTwo() {
+function div2() {
   total /= 2;
-  document.querySelector("#result").innerText = total;
-  document.querySelector("body").style.backgroundColor = "burlywood";
+  document.getElementById("result").innerText = total;
+  document.querySelector("body").style.backgroundColor = "magenta";
+  document.querySelector("body").style.color = "black";
 }
