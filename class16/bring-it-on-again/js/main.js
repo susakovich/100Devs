@@ -30,6 +30,22 @@ function takesThreeNums(num1, num2, num3) {
 }
 takesThreeNums(200, 2, 1);
 // Create a function that takes in a day of the week. If it is a weekend alert, "weekend" and if not alert "week day". Handle capitilization and if the user does not enter a day of the week alert "Try again!"
-
+function dayOfWeek() {
+  let day = prompt("What day is it? ").toLowerCase();
+  if (day === "saturday" || day === "sunday") {
+    alert("It's weekend");
+  } else if (day === "") {
+    prompt("What day is it? ").toLowerCase();
+  } else {
+    alert("Week day.");
+  }
+}
+dayOfWeek();
 //*Loops*
 //Create a function that takes in a number. Console log all values from 1 to that number or greater, but count by 3
+function loopNumber(num) {
+  for (let i = 1; i <= num; i++) {
+    console.log(i);
+  }
+}
+loopNumber(15);
