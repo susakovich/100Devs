@@ -45,6 +45,9 @@ dayOfWeek();
 //Create a function that takes in a number. Console log all values from 1 to that number or greater, but count by 3
 function loopNumber(num) {
   for (let i = 1; i <= num; i++) {
+    if (i === 4) {
+      break;
+    }
     console.log(i);
   }
 }
