@@ -2,7 +2,7 @@
 
 //Create and array of numbers. Sum all of the numbers. Alert the sum.
 let arrayNums = [1, 2, 3, 4, 5];
-let arraySum = arrayNums.reduce((acc, curr) => acc + curr);
+let arraySum = arrayNums.reduce((acc, curr) => acc + curr, 0);
 console.log(arraySum);
 
 //Create a function that takes in an array of numbers
