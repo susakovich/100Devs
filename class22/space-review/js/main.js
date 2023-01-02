@@ -2,7 +2,7 @@
 
 //Create and array of numbers. Sum all of the numbers. Alert the sum.
 let arrayNums = [1, 2, 3, 4, 5];
-let arraySum = arrayNums.reduce((curr, total) => curr + total);
+let arraySum = arrayNums.reduce((acc, curr) => acc + curr);
 console.log(arraySum);
 
 //Create a function that takes in an array of numbers
@@ -17,7 +17,7 @@ console.log(arrayOfNums([1, 2, 3, 4, 5]));
 function reverseStr(str) {
   return str.split("").reverse().join("");
 }
-console.log(reverseStr("World"));
+console.log(reverseStr("Danijel"));
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
