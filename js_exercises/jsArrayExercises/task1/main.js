@@ -26,4 +26,4 @@ function camelize(str) {
 
 console.log(camelize("background-color"));
 console.log(camelize("list-style-image"));
-console.log(camelize("webkit-transition"));
+console.log(camelize("-webkit-transition"));
