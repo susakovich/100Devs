@@ -1,6 +1,7 @@
 // *Variables*
 // Declare a variable and assign it to a sentance as a string. Alert if the sentance is a question
 let whoAreYou = "Tell me, who are you?";
+//* we can also use whoAreYou.endsWith("?") instead includes
 if (whoAreYou.includes("?")) {
   console.log(whoAreYou);
 }
