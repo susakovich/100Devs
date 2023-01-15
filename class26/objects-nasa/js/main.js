@@ -4,6 +4,7 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
+    document.querySelector("h1").innerText = data.date;
     document.querySelector("h2").innerText = data.title;
     document.querySelector("img").src = data.hdurl;
     document.querySelector("h3").innerText = data.explanation;
