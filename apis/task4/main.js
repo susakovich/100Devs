@@ -6,6 +6,8 @@ function getSpell() {
 
   document.querySelector("#classes").innerHTML = "";
   document.querySelector("#subclasses").innerHTML = "";
+  document.querySelector("#description").innerHTML = "";
+  document.querySelector("#spellSchool").innerHTML = "";
 
   fetch(url)
     .then((res) => res.json())
@@ -26,18 +28,28 @@ function getSpell() {
         document.querySelector("#subclasses").appendChild(li);
       });
 
+      // school spell
+      document.querySelector("#spellSchool").innerText = data.school.name;
+
       // spell name into dom
       document.querySelector("h2").innerText = data.name;
 
       // casting time of spell
       document.querySelector(
         ".school"
-      ).innerText = `Casting time of ${spellName} is ${data.casting_time}`;
+      ).innerText = `Casting time of ${spellName} is ${data.casting_time}.`;
 
       // level of spell
       document.querySelector(
         ".level"
       ).innerText = `Level of your ${spellName} is ${data.level}.`;
+
+      // spell description
+      data.desc.forEach((obj) => {
+        const li = document.createElement("li");
+        li.textContent = obj;
+        document.querySelector("#description").appendChild(li);
+      });
     })
     .catch((err) => {
       console.log(`error ${err}`);
