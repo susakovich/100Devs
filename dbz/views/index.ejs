@@ -1,0 +1,49 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dragon Ball Z Quote App</title>
+  </head>
+
+  <body>
+    <h1>Welcome to Turtle House aka Kame House</h1>
+
+    <form action="/quotes" method="POST">
+      <input type="text" placeholder="name" name="name" />
+      <input type="text" placeholder="quote" name="quote" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Quotes</h2>
+
+    <ul class="quotes">
+      <!-- Loop through quotes -->
+      <% for(var i = 0; i < quotes.length; i++) {%>
+      <li class="quote">
+        <!-- Output name from the iterated quote object -->
+        <span><%= quotes[i].name %></span>:
+        <!-- Output quote from the iterated quote object -->
+        <span><%= quotes[i].quote %></span>
+      </li>
+      <% } %>
+    </ul>
+
+    <div>
+      <h2>Kaaaa-meeee-haaaaa-meeee-haaaaaaaaaaaa</h2>
+      <h3>Replace first Goku quote with a quote written by Vegeta.</h3>
+      <button id="update-button">Replace Goku's Quote</button>
+    </div>
+    <div>
+      <h2>Final Explosion 🤯</h2>
+      <p>
+        Delete one of Vegeta quote. Does nothing if there are no more Vegeta
+        quotes.
+      </p>
+      <button id="delete-button">Delete Vegeta's quote</button>
+    </div>
+    <h4 id="message"></h4>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
