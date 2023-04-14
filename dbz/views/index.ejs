@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dragon Ball Z Quote App</title>
   </head>
 
@@ -22,7 +23,7 @@
       <% for(var i = 0; i < quotes.length; i++) {%>
       <li class="quote">
         <!-- Output name from the iterated quote object -->
-        <span><%= quotes[i].name %></span>:
+        <span><%= quotes[i].name %></span>
         <!-- Output quote from the iterated quote object -->
         <span><%= quotes[i].quote %></span>
       </li>
